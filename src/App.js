@@ -132,7 +132,7 @@ function App() {
           </div>
 
           <div className='col-two'>
-          Index
+          {/* index will be here ... to continue project */}
           </div>
 
         </div>
