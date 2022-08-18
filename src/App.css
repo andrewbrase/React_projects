@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+body {
+    background-color: rgb(42, 42, 42);
+    font-family: OCR A Std, monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.grad {
+background: linear-gradient(90deg, rgb(70, 74, 150) 10%, rgb(48, 114, 97) 100%);
+border-radius: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.logo {
+    background: linear-gradient(90deg, rgb(70, 74, 150) 10%, rgb(48, 114, 97) 100%);
+    border-radius: 50%;
+    height: 190px;
+    width: 90%;
+    margin-left: 9px;
+    margin-top: 25%;
+}
+
+.navbar-back {
+    position: fixed;
+    overflow-y:scroll;
+    margin-left: -7px;
+    margin-top: -10px;
+    background-color: rgb(27, 27, 27);
+    height: 100%;
+}
+
+.title {
+    color: aliceblue;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.name {
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+::-webkit-scrollbar {
+    display: none;
   }
+
+.navprojects-start {
+    margin-top: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.icons {
+    padding-left: 10px;
+    display: flex;
+    padding-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.icon-item {
+    flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.right-of-menu {
+    margin-left: 230px;
+}
+
+.welcome {
+    text-shadow: 1px 1px 6px #000000cb;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    color: aliceblue;
+    font-size: 5vw;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.blue {
+    color: rgb(90, 181, 195);
+}
+
+.right-grid {
+    margin-top: 30px;
+    border-radius: 15px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    overflow-wrap: break-word;
+}
+
+.col-one {
+    grid-column-start: 1;
+    height: fit-content;
+}
+
+.col-two {
+    grid-column-start: 2;
+    height: fit-content;
+}
+
+.row-one {
+    grid-row-start: 1;
+}
+
+.row-two {
+    grid-row-start: 2;
+}
+
+.row-three {
+    grid-row-start: 3;
+}
+
+.row-four {
+    grid-row-start: 4;
+}
+
+.row-title {
+    font-size: 5vw;
+    font-family: 'Orbitron', sans-serif;
 }
