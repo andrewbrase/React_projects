@@ -61,6 +61,7 @@ function App() {
     const rightTitles = document.getElementsByClassName("row-title");
     const button = document.getElementsByClassName('button-style');
     const navbarColor = document.getElementsByClassName('navbar-back');
+    // import navback? or try again
 
     if (choice % 2 == 0) {
       // Bright
