@@ -62,6 +62,9 @@ function App() {
     const button = document.getElementsByClassName('button-style');
     const navbarColor = document.getElementsByClassName('navbar-back');
     // import navback? or try again
+    const navItems = Array.from(
+      document.getElementsByClassName('navback')
+    )
 
     if (choice % 2 == 0) {
       // Bright
@@ -69,6 +72,11 @@ function App() {
       rightText[0].style.color = 'black';
       rightTitles[0].style.color = 'rgb(70, 74, 150)';
       navbarColor[0].style.backgroundColor = '#1e1d4a';
+
+      navItems.forEach(element => {
+        element.style.backgroundColor = '#060824';
+      });
+
       // setting the button to offer the choice of darken on the next click
       button[0].innerHTML = "Darken";
       return choice = choice + 1;
@@ -79,6 +87,11 @@ function App() {
       rightText[0].style.color = 'white';
       rightTitles[0].style.color = 'white';
       navbarColor[0].style.backgroundColor = 'rgb(27, 27, 27)';
+
+      navItems.forEach(element => {
+        element.style.backgroundColor = 'rgb(37, 37, 37)';
+      });
+
       // setting the button to offer the choice of bright on the next click
       button[0].innerHTML = "Bright";
       return choice = choice + 1;
