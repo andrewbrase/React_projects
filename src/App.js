@@ -182,15 +182,19 @@ function App() {
             <div className='row-one'>
               <div className='row-title'>Welcome</div>
               <div className='line-space-para'>My name is Andrew and I've been learning web development since 2019.
-               I'm passionate about self motivation and studying to improve my skills everyday. I love constructive 
-               feedback so please reach out to me if you have any comments or advice!</div>
+                I'm passionate about self motivation and studying to improve my skills everyday. I love constructive
+                feedback so please reach out to me if you have any comments or advice!</div>
             </div>
           </div>
 
           <div className='col-two'>
             <div className='row-one'>
-          <img src='JS.jpg' className='javascript-img' alt='img not found'></img>
-          </div>
+              <img src='JS.jpg' className='javascript-img' alt='img not found'></img>
+            </div>
+
+            <div className='row-two'>
+              <div className='line-space-para'>text row 2</div>
+            </div>
           </div>
 
         </div>

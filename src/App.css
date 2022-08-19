@@ -119,6 +119,7 @@ body {
 }
 
 .row-two {
+    padding-top: 10%;
     grid-row-start: 2;
 }
 
