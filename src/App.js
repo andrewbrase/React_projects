@@ -66,7 +66,7 @@ function App() {
       document.getElementsByClassName('navback')
     )
 
-    if (choice % 2 == 0) {
+    if (choice % 2 === 0) {
       // Bright
       rightBody[0].style.backgroundColor = "#c7c9c8";
       rightText[0].style.color = 'black';
@@ -181,12 +181,16 @@ function App() {
           <div className='col-one'>
             <div className='row-one'>
               <div className='row-title'>Welcome</div>
-              test test test
+              <div className='line-space-para'>My name is Andrew and I've been learning web development since 2019.
+               I'm passionate about self motivation and studying to improve my skills everyday. I love constructive 
+               feedback so please reach out to me if you have any comments or advice!</div>
             </div>
           </div>
 
           <div className='col-two'>
-
+            <div className='row-one'>
+          <img src='JS.jpg' className='javascript-img' alt='img not found'></img>
+          </div>
           </div>
 
         </div>
