@@ -52,14 +52,37 @@ function App() {
     }
   ]
 
-  const hideMenu = () => {
-    // var choice = 2
-    const navbar = document.getElementsByTagName("body");
-    const righttext = document.getElementsByClassName("right-of-menu");
-    const righttitles = document.getElementsByClassName("row-title");
-    navbar[0].style.backgroundColor = "#c7c9c8";
-    righttext[0].style.color = 'black'
-    righttitles[0].style.color = 'black'
+  var choice = 2;
+
+  const pagemode = () => {
+
+    const rightBody = document.getElementsByTagName("body");
+    const rightText = document.getElementsByClassName("right-of-menu");
+    const rightTitles = document.getElementsByClassName("row-title");
+    const button = document.getElementsByClassName('button-style');
+    const navbarColor = document.getElementsByClassName('navbar-back');
+
+    if (choice % 2 == 0) {
+      // Bright
+      rightBody[0].style.backgroundColor = "#c7c9c8";
+      rightText[0].style.color = 'black';
+      rightTitles[0].style.color = 'rgb(70, 74, 150)';
+      navbarColor[0].style.backgroundColor = '#1e1d4a';
+      // setting the button to offer the choice of darken on the next click
+      button[0].innerHTML = "Darken";
+      return choice = choice + 1;
+
+    } else {
+      // Darken
+      rightBody[0].style.backgroundColor = "rgb(42, 42, 42)";
+      rightText[0].style.color = 'white';
+      rightTitles[0].style.color = 'white';
+      navbarColor[0].style.backgroundColor = 'rgb(27, 27, 27)';
+      // setting the button to offer the choice of bright on the next click
+      button[0].innerHTML = "Bright";
+      return choice = choice + 1;
+    }
+
   }
 
   return (
@@ -69,7 +92,7 @@ function App() {
       <div className='navbar-back'>
 
         <div className='button-right'>
-        <button className='button-style' onClick={hideMenu}>Bright / Darken</button>
+          <button className='button-style' onClick={pagemode}>Bright</button>
         </div>
 
         <div className='logo'>
@@ -139,14 +162,14 @@ function App() {
 
         <div className='right-grid'>
           <div className='col-one'>
-          <div className='row-one'>
-            <div className='row-title'>Welcome</div> 
-          test test test 
-          </div>
+            <div className='row-one'>
+              <div className='row-title'>Welcome</div>
+              test test test
+            </div>
           </div>
 
           <div className='col-two'>
-          {/* index will be here ... to continue project */}
+
           </div>
 
         </div>

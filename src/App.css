@@ -4,8 +4,8 @@ body {
 }
 
 .grad {
-background: linear-gradient(90deg, rgb(70, 74, 150) 10%, rgb(48, 114, 97) 100%);
-border-radius: 20px;
+    background: linear-gradient(90deg, rgb(70, 74, 150) 10%, rgb(48, 114, 97) 100%);
+    border-radius: 20px;
 }
 
 .logo {
@@ -20,8 +20,8 @@ border-radius: 20px;
 .navbar-back {
     position: fixed;
     overflow-y:scroll;
-    margin-left: -7px;
-    margin-top: -10px;
+    margin-left: -8px;
+    margin-top: -8px;
     background-color: rgb(27, 27, 27);
     height: 100%;
 }
@@ -71,6 +71,7 @@ border-radius: 20px;
 
 .right-of-menu {
     margin-left: 230px;
+    color: white;
 }
 
 .welcome {
