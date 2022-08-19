@@ -4,8 +4,9 @@ body {
 }
 
 .imgcirc {
-    background-image: url(/public/circboard.jpg);
+    background-image: url(/public/circboard.jpg); 
     border-radius: 20px;
+    background-size: cover;
 }
 
 .grad {
