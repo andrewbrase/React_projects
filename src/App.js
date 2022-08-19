@@ -52,11 +52,25 @@ function App() {
     }
   ]
 
+  const hideMenu = () => {
+    // var choice = 2
+    const navbar = document.getElementsByTagName("body");
+    const righttext = document.getElementsByClassName("right-of-menu");
+    const righttitles = document.getElementsByClassName("row-title");
+    navbar[0].style.backgroundColor = "#c7c9c8";
+    righttext[0].style.color = 'black'
+    righttitles[0].style.color = 'black'
+  }
+
   return (
 
     <div>
 
       <div className='navbar-back'>
+
+        <div className='button-right'>
+        <button className='button-style' onClick={hideMenu}>Bright / Darken</button>
+        </div>
 
         <div className='logo'>
 
@@ -127,7 +141,7 @@ function App() {
           <div className='col-one'>
           <div className='row-one'>
             <div className='row-title'>Welcome</div> 
-          
+          test test test 
           </div>
           </div>
 
