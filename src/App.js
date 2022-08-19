@@ -170,11 +170,11 @@ function App() {
       </div>
 
       <div className='right-of-menu'>
-      
-      <div className='imgcirc'>
-        <div className='grad'>
-          <div className='welcome'>&lt;<span className='blue'>h1</span>&gt; Hi, I'm Andrew &lt;<span className='blue'>/h1</span>&gt;</div>
-        </div> 
+
+        <div className='imgcirc'>
+          <div className='grad'>
+            <div className='welcome'>&lt;<span className='blue'>h1</span>&gt; Hi, I'm Andrew &lt;<span className='blue'>/h1</span>&gt;</div>
+          </div>
         </div>
 
         <div className='right-grid'>
