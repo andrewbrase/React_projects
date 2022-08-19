@@ -54,7 +54,7 @@ function App() {
 
   var choice = 2;
 
-  const pagemode = () => {
+  const theme = () => {
 
     const rightBody = document.getElementsByTagName("body");
     const rightText = document.getElementsByClassName("right-of-menu");
@@ -74,7 +74,7 @@ function App() {
       navbarColor[0].style.backgroundColor = '#1e1d4a';
 
       navItems.forEach(element => {
-        element.style.backgroundColor = '#060824';
+        element.style.backgroundColor = '#04063b';
       });
 
       // setting the button to offer the choice of darken on the next click
@@ -106,7 +106,7 @@ function App() {
       <div className='navbar-back'>
 
         <div className='button-right'>
-          <button className='button-style' onClick={pagemode}>Bright</button>
+          <button className='button-style' onClick={theme}>Bright</button>
         </div>
 
         <div className='logo'>
@@ -170,8 +170,11 @@ function App() {
       </div>
 
       <div className='right-of-menu'>
+      
+      <div className='imgcirc'>
         <div className='grad'>
           <div className='welcome'>&lt;<span className='blue'>h1</span>&gt; Hi, I'm Andrew &lt;<span className='blue'>/h1</span>&gt;</div>
+        </div> 
         </div>
 
         <div className='right-grid'>
