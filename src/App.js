@@ -193,7 +193,8 @@ function App() {
             </div>
 
             <div className='row-two'>
-              <div className='line-space-para'>text row 2</div>
+              <div className='line-space-para'>text row 2
+              </div>
             </div>
           </div>
 
