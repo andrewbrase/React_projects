@@ -5,25 +5,18 @@ import { useState } from 'react';
 
 function App() {
 
-  // const hobbies = [
-  //   {
-  //     hob : 'Web Developer'
-  //   },
-  //   {
-  //     hob : 'Reptile Enthusiast'
-  //   },
-  // ]
-
-  const hobbies = ['Web Developer', 'Reptile Enthusiast', 'test 3','test 4'];
-  var i = 0;
+  const hobbies = ['Web Developer', 'Reptile Enthusiast', 'Environmentalist'];
   // hobbies
-  const [hobbie, setNew] = useState(hobbies[i])
+  const [hobbie, setNew] = useState(hobbies[0])
 
   const clickHandler = () => {
-    var numvalue = document.getElementById('number');
-    numvalue++;
-    setNew(hobbies[numvalue]);
-    // fix
+    if (hobbie === 'Web Developer') {
+      setNew(hobbies[1]);
+    } else if (hobbie === 'Reptile Enthusiast'){
+      setNew(hobbies[2]);
+    } else {
+      setNew(hobbies[0]);
+    }
   }
 
   // if you have data that might change upon an event you will need state 
@@ -147,7 +140,7 @@ function App() {
           </div>
           <div>
             {/* hobbies */}
-            <div onClick = {clickHandler} number='0'>{hobbie}</div>
+            <div onClick = {clickHandler}>{hobbie}</div>
           </div>
         </div>
 
@@ -209,7 +202,7 @@ function App() {
         <div className='right-grid'>
           <div className='col-one'>
             <div className='row-one'>
-              <div className='row-title'>Welcome &#129422;</div>
+              <div className='row-title'>Welcome</div>
               <div className='line-space-para'>My name is Andrew and I'm a self taught web developer.
                 I'm passionate about studying to improve my skills everyday. I love constructive
                 feedback so please reach out to me if you have any comments or advice!</div>
