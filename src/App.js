@@ -21,7 +21,7 @@ function App() {
 
   // if you have data that might change upon an event you will need state 
   // useState is a React hook, they must be called inside of these component functions
-  // assign an initial value for that variable - props.title
+  // assign an initial value for that variable
   // this will create an array [current value, updated value]
   // we can use array destructuring 
 
