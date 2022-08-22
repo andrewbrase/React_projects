@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 function App() {
 
-  const hobbies = ['Web Developer', 'Reptile Enthusiast', 'Environmentalist'];
+  const hobbies = ['Web Developer', 'Reptile Enthusiast', 'Graphic Designer'];
   // hobbies
   const [hobbie, setNew] = useState(hobbies[0])
 
