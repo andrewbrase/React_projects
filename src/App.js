@@ -1,8 +1,36 @@
 import Nav from './components/navitem';
 import IconLink from './components/iconlink';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+
+  // const hobbies = [
+  //   {
+  //     hob : 'Web Developer'
+  //   },
+  //   {
+  //     hob : 'Reptile Enthusiast'
+  //   },
+  // ]
+
+  const hobbies = ['Web Developer', 'Reptile Enthusiast', 'test 3','test 4'];
+  var i = 0;
+  // hobbies
+  const [hobbie, setNew] = useState(hobbies[i])
+
+  const clickHandler = () => {
+    var numvalue = document.getElementById('number');
+    numvalue++;
+    setNew(hobbies[numvalue]);
+    // fix
+  }
+
+  // if you have data that might change upon an event you will need state 
+  // useState is a React hook, they must be called inside of these component functions
+  // assign an initial value for that variable - props.title
+  // this will create an array [current value, updated value]
+  // we can use array destructuring 
 
   const navs = [
     {
@@ -50,7 +78,7 @@ function App() {
       desc: '',
       url: 'https://www.youtube.com/watch?v=YaYwasi72K8&t=405s',
     }
-  ]
+  ];
 
   var choice = 2;
 
@@ -118,7 +146,8 @@ function App() {
             Andrew Brase
           </div>
           <div>
-            Web Developer
+            {/* hobbies */}
+            <div onClick = {clickHandler} number='0'>{hobbie}</div>
           </div>
         </div>
 
@@ -180,9 +209,9 @@ function App() {
         <div className='right-grid'>
           <div className='col-one'>
             <div className='row-one'>
-              <div className='row-title'>Welcome</div>
-              <div className='line-space-para'>My name is Andrew and I've been learning web development since 2019.
-                I'm passionate about self motivation and studying to improve my skills everyday. I love constructive
+              <div className='row-title'>Welcome &#129422;</div>
+              <div className='line-space-para'>My name is Andrew and I'm a self taught web developer.
+                I'm passionate about studying to improve my skills everyday. I love constructive
                 feedback so please reach out to me if you have any comments or advice!</div>
             </div>
           </div>

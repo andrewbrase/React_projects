@@ -1,4 +1,4 @@
-import './iconlink.css'
+import './iconlink.css';
 
 function IconLink (props) {
     return (
@@ -8,4 +8,4 @@ function IconLink (props) {
     )
 }
 
-export default IconLink
+export default IconLink;
