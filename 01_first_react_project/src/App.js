@@ -209,17 +209,20 @@ function App() {
           <div className='para'>
             <img src='JS.jpg' className='para-img'></img>
           </div>
+        </div>
 
+
+        <div className='flex-container'>
           <div className='para'>
             <img src='laptop.jpg' className='para-img'></img>
           </div>
 
           <div className='para'><div className='row-title'>My Projects</div>
             I've compiled a collection of my work throughout my web development learning to demonstrate
-
           </div>
-
         </div>
+
+
         <FormContact></FormContact>
       </div>
     </div>
