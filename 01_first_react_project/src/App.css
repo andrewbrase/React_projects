@@ -101,12 +101,10 @@ body {
 }
 
 .flex-container {
-    background-color: rgb(53, 53, 53);
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
-    
+    align-items: center;
     padding: 20px;
-    gap: 30px;
 }
 
 .para {

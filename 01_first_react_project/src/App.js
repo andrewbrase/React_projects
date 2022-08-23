@@ -229,7 +229,7 @@ function App() {
           </div>
 
           <div className='para'><div className='row-title'>My Projects</div>
-            I've compiled a collection of my work throughout my web development learning to demonstrate
+            I've compiled a collection of my work throughout my web development learning to demonstrate what I've learned.
           </div>
 
         </div>
