@@ -138,12 +138,12 @@ body {
 }
 
 .line-space-para{
-    font-size: 1.5vw;
+    font-size: 20px;
     line-height: 1.5;
 }
 
 .javascript-img {
-    min-width: 300px;
+    min-width: 100px;
     padding-top: 10%;
     width: 100%;
     border-radius: 5px;

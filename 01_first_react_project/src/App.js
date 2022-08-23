@@ -1,4 +1,5 @@
 import Nav from './components/navitem';
+import FormContact from './components/FormContact';
 import IconLink from './components/iconlink';
 import './App.css';
 import { useState } from 'react';
@@ -219,8 +220,10 @@ function App() {
               </div>
             </div>
           </div>
-
         </div>
+
+        
+        <FormContact></FormContact>
       </div>
     </div>
   );

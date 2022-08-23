@@ -1,3 +1,16 @@
-.new-form {
-    background-color: azure;
+.form-back {
+    background-color: rgb(55, 55, 55);
+}
+
+.form-area {
+    color: rgb(240, 237, 232);
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 1px 1px 6px #000000ed;
+}
+
+.text-area {
+    width: 400px;
+    height: 200px;
+    resize: none;
 }
