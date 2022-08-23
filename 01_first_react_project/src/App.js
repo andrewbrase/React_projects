@@ -13,7 +13,7 @@ function App() {
   const clickHandler = () => {
     if (hobbie === 'Web Developer') {
       setNew(hobbies[1]);
-    } else if (hobbie === 'Reptile Enthusiast'){
+    } else if (hobbie === 'Reptile Enthusiast') {
       setNew(hobbies[2]);
     } else {
       setNew(hobbies[0]);
@@ -141,7 +141,7 @@ function App() {
           </div>
           <div>
             {/* hobbies */}
-            <div onClick = {clickHandler}>{hobbie}</div>
+            <div onClick={clickHandler}>{hobbie}</div>
           </div>
         </div>
 
@@ -200,29 +200,26 @@ function App() {
           </div>
         </div>
 
-        <div className='right-grid'>
-          <div className='col-one'>
-            <div className='row-one'>
-              <div className='row-title'>Welcome</div>
-              <div className='line-space-para'>My name is Andrew and I'm a self taught web developer.
-                I'm passionate about studying to improve my skills everyday. I love constructive
-                feedback so please reach out to me if you have any comments or advice!</div>
-            </div>
+
+        <div className='flex-container'>
+          <div className='para'><div className='row-title'>Welcome</div>My name is Andrew and I'm a self taught web developer.
+            I'm passionate about studying to improve my skills everyday. I like constructive
+            feedback so please reach out to me if you have any comments or advice!</div>
+
+          <div className='para'>
+            <img src='JS.jpg' className='para-img'></img>
           </div>
 
-          <div className='col-two'>
-            <div className='row-one'>
-              <img src='JS.jpg' className='javascript-img' alt='img not found'></img>
-            </div>
-
-            <div className='row-two'>
-              <div className='line-space-para'>text row 2
-              </div>
-            </div>
+          <div className='para'>
+            <img src='laptop.jpg' className='para-img'></img>
           </div>
+
+          <div className='para'><div className='row-title'>My Projects</div>
+            I've compiled a collection of my work throughout my web development learning to demonstrate
+
+          </div>
+
         </div>
-
-        
         <FormContact></FormContact>
       </div>
     </div>

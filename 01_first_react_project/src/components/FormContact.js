@@ -44,7 +44,7 @@ const FormContact = () => {
 
                 </div>
             </form>
-
+            
         </div>
     );
 };

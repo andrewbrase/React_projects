@@ -1,5 +1,11 @@
 .form-back {
     background-color: rgb(55, 55, 55);
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    width: 95%;
 }
 
 .form-area {
@@ -9,8 +15,22 @@
     text-shadow: 1px 1px 6px #000000ed;
 }
 
+input:hover {
+    background-color: rgb(210, 208, 208);
+}
+
 .text-area {
-    width: 400px;
+    border-radius: 15px;
+    width: 50%;
+    min-width: 200px;
     height: 200px;
     resize: none;
+}
+
+.text-area:hover {
+    background-color: rgb(210, 208, 208);
+}
+
+label {
+    padding: 10px;
 }
