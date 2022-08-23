@@ -80,20 +80,26 @@ function App() {
 
     const rightBody = document.getElementsByTagName("body");
     const rightText = document.getElementsByClassName("right-of-menu");
-    const rightTitles = document.getElementsByClassName("row-title");
     const button = document.getElementsByClassName('button-style');
     const navbarColor = document.getElementsByClassName('navbar-back');
-    // import navback? or try again
+
     const navItems = Array.from(
       document.getElementsByClassName('navback')
+    )
+
+    const rightTitles = Array.from(
+      document.getElementsByClassName("row-title")
     )
 
     if (choice % 2 === 0) {
       // Bright
       rightBody[0].style.backgroundColor = "#c7c9c8";
       rightText[0].style.color = 'black';
-      rightTitles[0].style.color = 'rgb(70, 74, 150)';
       navbarColor[0].style.backgroundColor = '#1e1d4a';
+
+      rightTitles.forEach(element => {
+        element.style.color = 'rgb(70, 74, 150)';
+      });
 
       navItems.forEach(element => {
         element.style.backgroundColor = '#04063b';
@@ -107,8 +113,11 @@ function App() {
       // Darken
       rightBody[0].style.backgroundColor = "rgb(42, 42, 42)";
       rightText[0].style.color = 'white';
-      rightTitles[0].style.color = 'white';
       navbarColor[0].style.backgroundColor = 'rgb(27, 27, 27)';
+
+      rightTitles.forEach(element => {
+        element.style.color = 'white';
+      });
 
       navItems.forEach(element => {
         element.style.backgroundColor = 'rgb(37, 37, 37)';
