@@ -94,15 +94,6 @@ body {
     color: rgb(90, 181, 195);
 }
 
-.right-grid {
-    margin-top: 30px;
-    margin-left: 5%;
-    border-radius: 15px;
-    gap: 5%;
-    display: grid;
-    grid-template-columns: 45% 45%;
-}
-
 .row-title {
     font-size: 40px;
     font-family: 'Orbitron', sans-serif;
@@ -110,9 +101,10 @@ body {
 }
 
 .flex-container {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     padding: 20px;
+    gap: 30px;
 }
 
 .para {
@@ -129,4 +121,9 @@ body {
     width: 500px;
     height: fit-content;
     border-radius: 10px;
+}
+
+.flex-row {
+    background-color: rgb(118, 118, 118);
+    justify-content: center;
 }

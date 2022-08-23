@@ -203,6 +203,7 @@ function App() {
 
       <div className='right-of-menu'>
 
+
         <div className='imgcirc'>
           <div className='grad'>
             <div className='welcome'>&lt;<span className='blue'>h1</span>&gt; Hi, I'm Andrew &lt;<span className='blue'>/h1</span>&gt;</div>
@@ -211,12 +212,14 @@ function App() {
 
 
         <div className='flex-container'>
+          <div className='flex-row'>
           <div className='para'><div className='row-title'>Welcome</div>My name is Andrew and I'm a self taught web developer.
             I'm passionate about studying to improve my skills everyday. I like constructive
             feedback so please reach out to me if you have any comments or advice!</div>
 
           <div className='para'>
             <img src='JS.jpg' className='para-img'></img>
+            </div>
           </div>
         </div>
 
