@@ -4,7 +4,7 @@ body {
 }
 
 .imgcirc {
-    background-image: url(/public/circboard.jpg); 
+    background-image: url(/public/circboard.jpg);
     border-radius: 20px;
     background-size: cover;
 }
@@ -12,6 +12,7 @@ body {
 .grad {
     background: linear-gradient(90deg, rgba(45, 51, 154, 0.759) 10%, rgba(40, 138, 113, 0.792) 100%);
     border-radius: 20px;
+    min-width: 500px;
 }
 
 .logo {
@@ -25,7 +26,7 @@ body {
 
 .navbar-back {
     position: fixed;
-    overflow-y:scroll;
+    overflow-y: scroll;
     margin-left: -8px;
     margin-top: -8px;
     background-color: rgb(27, 27, 27);
@@ -59,7 +60,7 @@ body {
 
 ::-webkit-scrollbar {
     display: none;
-  }
+}
 
 .navprojects-start {
     margin-top: 10px;
@@ -81,6 +82,7 @@ body {
 }
 
 .welcome {
+    min-width: 500px;
     text-shadow: 1px 1px 6px #000000cb;
     padding-top: 3%;
     padding-bottom: 3%;
@@ -105,9 +107,12 @@ body {
     flex-wrap: wrap;
     align-items: center;
     padding: 20px;
+    justify-content: space-between;
+    margin: 0 8em;
 }
 
 .para {
+    border-radius: 15px;
     font-size: 25px;
     line-height: 1.7;
     width: 500px;

@@ -229,13 +229,43 @@ function App() {
           </div>
 
           <div className='para'><div className='row-title'>My Projects</div>
-            I've compiled a collection of my work throughout my web development learning to demonstrate what I've learned.
+            I've compiled a collection of my work throughout my web development learning to demonstrate what I can do.
           </div>
 
         </div>
 
+        <div className='flex-container'>
+          <div className='para'><div className='row-title'>My Skills</div>
+          This includes my resume along with other helpful info to know about me
 
-        <FormContact></FormContact>
+          </div>
+
+          <div className='para'>
+            <img src='resume.jpg' className='para-img'></img>
+          </div>
+        </div>
+
+        <div className='flex-container'>
+
+          <div className='para'>
+            <img src='about.jpg' className='para-img'></img>
+          </div>
+
+          <div className='para'><div className='row-title'>about me</div>
+          This is a little bit about who I am
+          </div>
+        </div>
+
+        <div className='flex-container'>
+          <div className='para'><div className='row-title'>My Contact info</div>
+          line 1
+          line 2
+          </div>
+        </div>
+
+        <div className='flex-container'>
+          <FormContact></FormContact>
+        </div>
       </div>
     </div>
   );
