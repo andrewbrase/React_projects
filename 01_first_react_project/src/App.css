@@ -119,6 +119,7 @@ body {
     height: fit-content;
     margin-left: auto;
     margin-right: auto;
+    min-width: 400px;
 }
 
 .para-img {

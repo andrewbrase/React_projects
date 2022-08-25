@@ -130,6 +130,20 @@ function App() {
 
   }
 
+  // I would like to add a thank you that appears on screen once a form is submitted
+  // 
+  // 
+  // 
+  const onSendFormDataHandler = (entered_form_data) => {
+    const data_from_form = {
+      ...entered_form_data,
+      id: Math.random().toString()
+    };
+
+    console.log(`thank you! ${data_from_form.id}`);
+
+  }
+
   return (
 
     <div>
@@ -264,7 +278,7 @@ function App() {
         </div>
 
         <div className='flex-container'>
-          <FormContact></FormContact>
+          <FormContact onSendFormData = {onSendFormDataHandler}/>
         </div>
       </div>
     </div>
